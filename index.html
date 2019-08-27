@@ -23,7 +23,10 @@
         </div>
 
         <div class="card-body">
-                <button id="button-1" class="btn btn-primary number" value="1"><span></span></button>
+                <button id="button-1" class="btn btn-primary number" id="choice1"><span><img src="assets/images/saltsprinkle.jpg" alt="salt"></span></button>
+                <button id="button-1" class="btn btn-primary number" id="choice2"><span><img src="assets/images/education.jpg" alt="salt"></span></button>
+                <button id="button-1" class="btn btn-primary number" id="choice3"><span><img src="assets/images/bigassdog.jpg" alt="salt"></span></button>
+                <button id="button-1" class="btn btn-primary number" id="choice4"><span><img src="assets/images/angrypanda.jpg" alt="salt"></span></button>
 
         <script>
             var randomNumber
@@ -33,13 +36,16 @@
 
 
             //generates a random number from 19-120
-            function randomIntFromInterval() { // min and max included 
+            function randomCompNumber() { // min and max included 
                 computerNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
                 console.log(computerNumber);
             }
 
-            randomIntFromInterval();
+            randomCompNumber();
 
+
+            $("#buttonOne").on("click", function(){
+                var randomButton1 = "";
             //generates a random number from 1-12
             function button1() { // min and max included 
                 userNumber1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
@@ -47,6 +53,31 @@
             }
 
             button1();
+
+            randomButton1 = userNumber1;
+        });
+
+
+            function button2() { // min and max included 
+                userNumber2 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+                console.log(userNumber2);
+            }
+
+            button2();
+
+            function button3() { // min and max included 
+                userNumber3 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+                console.log(userNumber3);
+            }
+
+            button3();
+
+            function button4() { // min and max included 
+                userNumber4 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+                console.log(userNumber4);
+            }
+
+            button4();
             
     
         </script>
