@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-image: url(../images/background_image.jpg);
+}
+
+p {
+    color: white;
+}
+
+button{
+    width: 200px;
+    height: 150px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
